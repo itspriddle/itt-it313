@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function add_students() {
+	var $array1 = new Array;
+	var $array2 = new Array;
+	var $array3 = new Array;
+
+//	$array1 = array("Arielle", "Jeffrey", "Eleanor");
+	$array1[0] = "Arielle";
+	$array1[1] = "Jeffrey";
+	$array1[2] = "Eleanor";
+
+	for ( $i = 0; $i < 3; $i++) 
+		$array2[ $i ] = prompt( "Enter three students' names: ", "" );
+
+	$array4 = $array1.concat( $array2 );
+
+	$array5 = $array4.sort();
+
+    document.write( $array5.join( "<br />" ) );
+
+	$array6 = $array5.reverse();
+
+	document.write( "<hr />" );
+
+    document.write( $array6.join( "<br />\n" ) );
+
+
+
+}
+
+-->
+</script>
+</head>
+<body onLoad="add_students()">
+
+</body>
+</html>
+

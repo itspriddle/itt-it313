@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Determining the Browser </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+var its_ie 		   = false;
+var its_ns		   = false;
+var its_opera	   = false;
+var its_webtv	   = false;
+var its_compatible = false;
+
+var user_agent = navigator.userAgent.toLowerCase();
+
+if ( user_agent.indexOf("opera") != -1 ) {
+	its_opera = true;
+} else if ( user_agent.indexOf("webtv") != -1 ) {
+	its_webtv = true;
+} else if ( user_agent.indexOf("msie") != -1 ) {
+	its_ie = true
+} else if ( user_agent.indexOf("mozilla") != -1 ) {
+	if ( ( user_agent.indexOf("compatible") == -1 ) &&
+		 ( user_agent.indexOf("spoofer") == -1 ) &&
+		 ( user_agent.indexOf("hotjava") == -1 ) )
+	{
+		its_ns = true;
+	} else {
+		its_compatible = true;
+	}
+}
+
+document.write( "<b>The complete userAgent string: </b><br />" );
+document.write( navigator.userAgent );
+document.write( "<p><b>The browser name is:</b><br />" );
+
+if ( its_ie ) {
+	document.write( "Internet Explorer" );
+} else if ( its_ns ) {
+	document.write( "Netscape" );
+} else if ( its_opera ) {
+	document.write( "Opera" );
+} else if ( its_webtv ) {
+	document.write( "WebTV" );
+} else if ( its_compatible ) {
+	document.write( "Netscape compatible" );
+}
+
+-->
+</script>
+</head>
+<body>
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Listing 4.5: Returning a Value from a Function </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+var pre_tip_total = (prompt("How much was the bill?")) - 0;
+var tip_cost;
+var total_bill;
+var tip_percentage = (prompt("What percentage will you tip?\nUse this format:\n15% = 0.15\n20% = 0.20\n28% = 0.28, etc.")) - 0;
+
+function calculate_tip(pre_tip, tip_rate) {
+	var tip_result;
+	tip_result = pre_tip * tip_rate;
+	return (tip_result);
+}
+
+//alert(parseFloat(pre_tip_total));
+//alert(parseFloat(tip_percentage));
+
+tip_cost = calculate_tip(pre_tip_total, tip_percentage);
+total_bill = pre_tip_total + tip_cost;
+alert("Your total bill is $" + total_bill + ".");
+-->
+</script>
+</head>
+<body>
+<h1>My Page</h1>
+<p>Welcome to my page</p>
+</body>
+</html>
+

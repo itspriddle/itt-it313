@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Listing 7.11: Using the Break Statement</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var number_to_guess = Math.ceil(Math.random() * 10)
+var prompt_message = "guess a number between 1 and 10:"
+var output_message = "You guessed it in "
+var total_guesses = 1
+var guess
+
+do {
+	guess = prompt(prompt_message, "")
+	if (guess == null) {
+		break
+	}
+	else if (guess == number_to_guess) {
+		output_message = output_message + total_guesses
+		alert(output_message + (total_guesses == 1 ? " try." : " tries."))
+		break
+	}
+	else if (guess < number_to_guess) {
+		prompt_message = "Sorry, your guess was too low. Try again:"
+	}
+	else {
+		prompt_message = "Sorry, your guess was too high. Try again:"
+	}
+	total_guesses++
+}
+while (true)
+
+//-->
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function focus_handler($message) {
+	window.status = $message;
+}
+-->
+</script>
+</head>
+<body>
+1. Click inside the first name field.<br />
+2. Keep your eye on the status bar while pressing tab.
+
+<form>
+First Name: <input type="text" onfocus="focus_handler('Enter your first name.');"><br />
+Last Name:  <input type="text" onfocus="focus_handler('Enter your last name.');"><br />
+<br />
+<input type="submit" value="Submit" onmouseover="focus_handler('Click this button to submit the form.')" onmouseout="focus_handler('')"><br />
+<input type="reset" value="Reset" onmouseover="focus_handler('Click this button to reset the form.')" onmouseout="focus_handler('')"><br />
+</form>
+</body>
+</html>
+

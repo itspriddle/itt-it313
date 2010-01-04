@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function get_average() {
+	var $input = eval(prompt("Number of scores to be entered"));
+
+	var $average = 0;
+	var $score;
+
+	for ($i = 0; $i < $input; $i++) {
+		
+		$score = eval(prompt("Enter score # " + ( $i + 1 )  + ":"));
+
+		$average += $score;
+
+	}
+	alert ($average);
+
+	var $final_average = eval($average / $input);
+
+	$final_average = Math.round($final_average * 100) / 100;
+
+	if ($final_average > 60) {
+		alert("Grade average of " + $final_average + " is passing.");
+	} else {
+		alert("Grade average of " + $final_average + " is failing.");
+	}
+}
+-->
+</script>
+</head>
+<body>
+<a href="#" onclick="get_average()">Click me</a>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Listing 6.5 Using the Switch() Statement</title>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var userMonth = prompt("Please tell me the month you want to check:", "")
+var userYear = prompt("Please tell me the year:", "")
+var days_in_the_month = get_month_days(userMonth, userYear)
+if (days_in_the_month != 0) {
+	alert(days_in_the_month)
+	
+}
+
+
+
+function get_month_days(month_name, year_value) {
+	var days_in_month
+	switch(month_name) {
+		case "January" : days_in_month = 31
+			break
+		
+		case "February" :
+			if (year_value % 4 == 0) {
+				days_in_month = 29
+			}
+			else {
+				days_in_month = 28
+			}
+			break	
+		
+		case "March" : days_in_month = 31
+			break
+		case "April" : days_in_month = 30
+			break
+		case "May" : days_in_month = 31
+			break
+		case "June" : days_in_month = 30
+			break
+		case "July" : days_in_month = 31
+			break
+		case "August" : days_in_month = 31
+			break
+		case "September" : days_in_month = 30
+			break
+		case "October" : days_in_month = 31
+			break
+		case "November" : days_in_month = 30
+			break
+		case "December" : days_in_month = 31
+			break
+		default : alert("The month " + month_name + " is invalid.") 
+			days_in_month = 0
+	}
+	return days_in_month
+	
+}
+
+//-->
+</script>
+</head>
+<body>
+</body>
+</html>

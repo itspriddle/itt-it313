@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+var home_image_over 	= new Image(200,35);
+home_image_over.src 	= "home_over.gif";
+var home_image_out		= new Image(200,35);
+home_image_out.src		= "home_out.gif";
+var sitemap_image_over	= new Image(200,35);
+sitemap_image_over.src	= "sitemap_over.gif";
+var sitemap_image_out	= new Image(200,35);
+sitemap_image_out.src	= "sitemap_out.gif";
+var support_image_over	= new Image(200,35);
+support_image_over.src	= "support_over.gif";
+var support_image_out	= new Image(200,35);
+support_image_out.src	= "support_out.gif";
+var contact_image_over	= new Image(200,35);
+contact_image_over.src	= "contact_over.gif";
+var contact_image_out	= new Image(200,35);
+contact_image_out.src	= "contact_out.gif";
+
+function mouseover_handler( image_name ) {
+	mouseover_image = eval( image_name + "_over" );
+	document.images[image_name].src = mouseover_image.src;
+}
+
+function mouseout_handler( image_name ) {
+	mouseout_image = eval( image_name + "_out" );
+	document.images[image_name].src = mouseout_image.src;
+}
+
+-->
+</script>
+</head>
+<body>
+
+<a href="javascript:void(0);" onmouseover="mouseover_handler( 'home_image' );" onmouseout="mouseout_handler( 'home_image' );">
+<img src="home_out.gif" name="home_image" border="0" />
+</a>
+
+<a href="javascript:void(0);" onmouseover="mouseover_handler( 'sitemap_image' );" onmouseout="mouseout_handler( 'sitemap_image' );">
+<img src="sitemap_out.gif" name="sitemap_image" border="0" />
+</a>
+
+<a href="javascript:void(0);" onmouseover="mouseover_handler( 'support_image' );" onmouseout="mouseout_handler( 'support_image' );">
+<img src="support_out.gif" name="support_image" border="0" />
+</a>
+
+<a href="javascript:void(0);" onmouseover="mouseover_handler( 'contact_image' );" onmouseout="mouseout_handler( 'contact_image' );">
+<img src="contact_out.gif" name="contact_image" border="0" />
+</a>
+
+
+</body>
+</html>
+

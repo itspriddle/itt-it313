@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title> </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function blur_handler($text_field) {
+	if ($text_field.value == "") {
+		alert("Please enter a value!");
+		$text_field.focus();
+	}
+}
+-->
+</script>
+</head>
+<body>
+<form>
+Click inside that box, and then click outside or press tab:<br />
+<input type="text" onBlur="blur_handler(this)" />
+</form>
+</body>
+</html>
+

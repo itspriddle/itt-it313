@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>A scrolling status bar message </title>
+<script language="JavaScript" type="text/javascript">
+<!--
+var status_message = "JavaScript is fun!";
+var delay_time 		= 50;
+var start_position 	= 100;
+var maximum_scrolls = 2;
+
+for ( var counter = 1; counter <= start_position; counter++ ) {
+	status_message = " " + status_message;
+}
+
+var current_position = 0;
+var total_scrolls    = 0;
+var interval_id      = setInterval( "scroll_message()", delay_time );
+
+function scroll_message() {
+	current_position++;
+
+	if ( current_position < status_message.length ) {
+		status = status_message.substring( current_position );
+	} else {
+		current_position = 0;
+		total_scrolls++;
+
+		if ( total_scrolls == maximum_scrolls ) {
+			clearInterval( interval_id);
+			status = "";
+			return;
+		}
+	}
+}
+-->
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
